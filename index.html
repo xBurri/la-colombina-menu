@@ -17,8 +17,8 @@
       font-family: Arial, sans-serif;
       min-height:100vh;
       background:
-radial-gradient(circle at top, rgba(30,70,140,0.35), transparent 35%),
-linear-gradient(180deg, #001b4d 0%, #002766 100%);
+      radial-gradient(circle at top, rgba(30,70,140,0.35), transparent 35%),
+      linear-gradient(180deg, #001b4d 0%, #002766 100%);
       display:flex;
       justify-content:center;
       align-items:center;
@@ -42,41 +42,13 @@ linear-gradient(180deg, #001b4d 0%, #002766 100%);
       max-width:720px;
       text-align:center;
       animation:fadeIn 1.2s ease;
-      padding-top:0px;
     }
 
     .logo{
-      width:1000px;
+      width:800px;
       max-width:95%;
-      margin-bottom:18px;
+      margin-bottom:10px;
       filter: drop-shadow(0 0 12px rgba(255,255,255,0.08));
-    }
-
-    .subtitle{
-      font-size:20px;
-      letter-spacing:2px;
-      color:rgba(255,255,255,0.82);
-      margin-bottom:25px;
-    }
-
-    .divider{
-      width:140px;
-      height:1px;
-      background:rgba(255,255,255,0.25);
-      margin:0 auto 38px auto;
-      position:relative;
-    }
-
-    .divider::after{
-      content:"∞";
-      position:absolute;
-      top:-12px;
-      left:50%;
-      transform:translateX(-50%);
-      font-size:20px;
-      color:rgba(255,255,255,0.4);
-      background:transparent;
-      padding:0 12px;
     }
 
     .button{
@@ -133,43 +105,50 @@ linear-gradient(180deg, #001b4d 0%, #002766 100%);
 
     @media(max-width:600px){
 
+      .container{
+        transform:translateY(-90px);
+      }
+
       .logo{
-        width:280px;
+        width:420px;
+        max-width:95%;
+        margin-bottom:8px;
       }
 
       .button{
-        font-size:18px;
-        padding:22px;
+        font-size:16px;
+        padding:15px 20px;
+        border-radius:18px;
+        margin-bottom:14px;
       }
 
     }
 
-    
-body::before{
-content:"";
-position:absolute;
-inset:0;
-background:
-radial-gradient(circle at bottom left, rgba(255,255,255,0.05), transparent 30%),
-radial-gradient(circle at bottom right, rgba(255,255,255,0.04), transparent 28%),
-linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
-background-size:
-100% 100%,
-100% 100%,
-100% 80px;
-opacity:1;
-pointer-events:none;
-}
+    body::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+      radial-gradient(circle at bottom left, rgba(255,255,255,0.05), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(255,255,255,0.04), transparent 28%),
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size:
+      100% 100%,
+      100% 100%,
+      100% 80px;
+      opacity:1;
+      pointer-events:none;
+    }
 
-body::after{
-content:"";
-position:absolute;
-inset:0;
-background:
-linear-gradient(to right, rgba(255,255,255,0.03), transparent 20%, transparent 80%, rgba(255,255,255,0.03));
-pointer-events:none;
-}
-    
+    body::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+      linear-gradient(to right, rgba(255,255,255,0.03), transparent 20%, transparent 80%, rgba(255,255,255,0.03));
+      pointer-events:none;
+    }
+
   </style>
 </head>
 
