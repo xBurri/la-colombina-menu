@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,38 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 background:#ffffff;
 font-family:Arial,sans-serif;
 overflow-x:hidden;
+}
+
+.top-bar{
+position:sticky;
+top:0;
+z-index:999;
+background:#001b4d;
+padding:14px 18px;
+}
+
+.home-button{
+color:white;
+text-decoration:none;
+font-size:15px;
+font-weight:bold;
+display:inline-flex;
+align-items:center;
+gap:8px;
+opacity:0.95;
+}
+
+.menu-container{
+width:100%;
+max-width:900px;
+margin:0 auto;
 }
 
 .menu-image{
@@ -28,22 +55,43 @@ padding:0;
 vertical-align:bottom;
 }
 
-.menu-container{
-width:100%;
-max-width:900px;
-margin:0 auto;
-padding:0;
+.bottom-section{
+background:#001b4d;
+padding:35px 20px 45px;
+text-align:center;
 }
 
-.menu-image{
-width:100%;
-display:block;
+.top-button{
+display:inline-block;
+background:white;
+color:#001b4d;
+text-decoration:none;
+padding:14px 26px;
+border-radius:14px;
+font-weight:bold;
+font-size:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.2s ease;
+}
+
+.top-button:hover{
+transform:translateY(-2px);
 }
 
 </style>
 </head>
 
 <body>
+
+<div id="top"></div>
+
+<div class="top-bar">
+
+<a class="home-button" href="index.html">
+← Torna Home
+</a>
+
+</div>
 
 <div class="menu-container">
 
@@ -68,6 +116,14 @@ display:block;
 <img class="menu-image" src="menu-italiano_page-0019.jpg">
 <img class="menu-image" src="menu-italiano_page-0020.jpg">
 <img class="menu-image" src="menu-italiano_page-0021.jpg">
+
+</div>
+
+<div class="bottom-section">
+
+<a class="top-button" href="#top">
+↑ Torna all'inizio
+</a>
 
 </div>
 
