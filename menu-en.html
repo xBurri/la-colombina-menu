@@ -20,7 +20,6 @@ body{
 background:#ffffff;
 font-family:Arial,sans-serif;
 overflow-x:hidden;
-color:#111;
 }
 
 .top-bar{
@@ -42,59 +41,24 @@ gap:8px;
 opacity:0.95;
 }
 
-.content{
+.menu-container{
 width:100%;
 max-width:900px;
 margin:0 auto;
-padding:30px 18px 50px;
 }
 
-.section-title{
-font-size:32px;
-font-weight:bold;
-margin:40px 0 20px;
-color:#001b4d;
-}
-
-.sub-title{
-font-size:24px;
-font-weight:bold;
-margin:28px 0 16px;
-color:#00337a;
-}
-
-.item{
-display:flex;
-justify-content:space-between;
-gap:20px;
-padding:14px 0;
-border-bottom:1px solid rgba(0,0,0,0.08);
-}
-
-.item-name{
-font-size:17px;
-font-weight:600;
-}
-
-.item-price{
-font-size:16px;
-font-weight:bold;
-white-space:nowrap;
-color:#001b4d;
-}
-
-.note{
-font-size:14px;
-opacity:0.7;
-margin-top:10px;
-line-height:1.5;
+.menu-image{
+width:100%;
+display:block;
+margin:0;
+padding:0;
+vertical-align:bottom;
 }
 
 .bottom-section{
 background:#001b4d;
 padding:35px 20px 45px;
 text-align:center;
-margin-top:40px;
 }
 
 .top-button{
@@ -110,20 +74,8 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 transition:0.2s ease;
 }
 
-@media(max-width:768px){
-
-.section-title{
-font-size:28px;
-}
-
-.sub-title{
-font-size:21px;
-}
-
-.item-name{
-font-size:16px;
-}
-
+.top-button:hover{
+transform:translateY(-2px);
 }
 
 </style>
@@ -141,205 +93,29 @@ font-size:16px;
 
 </div>
 
-<div class="content">
+<div class="menu-container">
 
-<h1 class="section-title">Seafood Menu</h1>
-
-<h2 class="sub-title">Starters</h2>
-
-<div class="item">
-<span class="item-name">Bibidi Bobidi Bu... octopus as you like it</span>
-<span class="item-price">€15</span>
-</div>
-
-<div class="item">
-<span class="item-name">Marinated Mussels</span>
-<span class="item-price">€15</span>
-</div>
-
-<div class="item">
-<span class="item-name">Milanese Shrimps</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Seafood Soup</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Chef's Tasting</span>
-<span class="item-price">€28 p.p.</span>
-</div>
-
-<div class="item">
-<span class="item-name">Special Tasting</span>
-<span class="item-price">€30 p.p.</span>
-</div>
-
-<div class="item">
-<span class="item-name">Royal Crudité</span>
-<span class="item-price">€23</span>
-</div>
-
-<h2 class="sub-title">Seafood First Courses</h2>
-
-<div class="item">
-<span class="item-name">Spaghetti with Seafood</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Spaghetti with Clams</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Linguine with Scampi</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Pennette with Grouper and Olives</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Linguine with Scorpion Fish</span>
-<span class="item-price">€18</span>
-</div>
-
-<h2 class="sub-title">Seafood Main Courses</h2>
-
-<div class="item">
-<span class="item-name">Fried Anchovies</span>
-<span class="item-price">€15</span>
-</div>
-
-<div class="item">
-<span class="item-name">Fried Calamari</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Mixed Fried Seafood</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Mixed Grill</span>
-<span class="item-price">€20</span>
-</div>
-
-<div class="item">
-<span class="item-name">Tuna Tagliata with Arugula and Parmesan</span>
-<span class="item-price">€20</span>
-</div>
-
-<div class="item">
-<span class="item-name">Sea Bass</span>
-<span class="item-price">€22</span>
-</div>
-
-<h1 class="section-title">Land Menu</h1>
-
-<div class="item">
-<span class="item-name">Mixed Cold Cuts</span>
-<span class="item-price">€15</span>
-</div>
-
-<div class="item">
-<span class="item-name">Fried Gnocchi with Prosciutto</span>
-<span class="item-price">€18</span>
-</div>
-
-<div class="item">
-<span class="item-name">Spaghetti Carbonara</span>
-<span class="item-price">€15</span>
-</div>
-
-<div class="item">
-<span class="item-name">Gnocchi alla Sorrentina</span>
-<span class="item-price">€15</span>
-</div>
-
-<h1 class="section-title">Our Pizzas</h1>
-
-<div class="item">
-<span class="item-name">Margherita</span>
-<span class="item-price">€7</span>
-</div>
-
-<div class="item">
-<span class="item-name">Marinara</span>
-<span class="item-price">€6.5</span>
-</div>
-
-<div class="item">
-<span class="item-name">Napoli</span>
-<span class="item-price">€8</span>
-</div>
-
-<div class="item">
-<span class="item-name">Capricciosa</span>
-<span class="item-price">€8.5</span>
-</div>
-
-<div class="item">
-<span class="item-name">Vegetarian</span>
-<span class="item-price">€10</span>
-</div>
-
-<div class="item">
-<span class="item-name">Four Cheese</span>
-<span class="item-price">€10</span>
-</div>
-
-<div class="item">
-<span class="item-name">Seafood Pizza</span>
-<span class="item-price">€18</span>
-</div>
-
-<h1 class="section-title">Desserts & Drinks</h1>
-
-<div class="item">
-<span class="item-name">Homemade Dessert</span>
-<span class="item-price">€5</span>
-</div>
-
-<div class="item">
-<span class="item-name">Dessert Selection</span>
-<span class="item-price">€20</span>
-</div>
-
-<div class="item">
-<span class="item-name">Water 0.75L</span>
-<span class="item-price">€2.5</span>
-</div>
-
-<div class="item">
-<span class="item-name">Soft Drinks</span>
-<span class="item-price">€3</span>
-</div>
-
-<div class="item">
-<span class="item-name">Small Beer</span>
-<span class="item-price">€4</span>
-</div>
-
-<div class="item">
-<span class="item-name">Medium Beer</span>
-<span class="item-price">€7</span>
-</div>
-
-<div class="item">
-<span class="item-name">Coffee</span>
-<span class="item-price">€1</span>
-</div>
-
-<p class="note">
-For a faster service, tables over 15 people are kindly requested not to split the bill.
-</p>
+<img class="menu-image" src="menu-english_page-0001.jpg">
+<img class="menu-image" src="menu-english_page-0002.jpg">
+<img class="menu-image" src="menu-english_page-0003.jpg">
+<img class="menu-image" src="menu-english_page-0004.jpg">
+<img class="menu-image" src="menu-english_page-0005.jpg">
+<img class="menu-image" src="menu-english_page-0006.jpg">
+<img class="menu-image" src="menu-english_page-0007.jpg">
+<img class="menu-image" src="menu-english_page-0008.jpg">
+<img class="menu-image" src="menu-english_page-0009.jpg">
+<img class="menu-image" src="menu-english_page-0010.jpg">
+<img class="menu-image" src="menu-english_page-0011.jpg">
+<img class="menu-image" src="menu-english_page-0012.jpg">
+<img class="menu-image" src="menu-english_page-0013.jpg">
+<img class="menu-image" src="menu-english_page-0014.jpg">
+<img class="menu-image" src="menu-english_page-0015.jpg">
+<img class="menu-image" src="menu-english_page-0016.jpg">
+<img class="menu-image" src="menu-english_page-0017.jpg">
+<img class="menu-image" src="menu-english_page-0018.jpg">
+<img class="menu-image" src="menu-english_page-0019.jpg">
+<img class="menu-image" src="menu-english_page-0020.jpg">
+<img class="menu-image" src="menu-english_page-0021.jpg">
 
 </div>
 
